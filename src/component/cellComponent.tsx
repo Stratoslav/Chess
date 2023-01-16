@@ -9,8 +9,12 @@ interface CellProps {
 export const CellComponent: FC<CellProps> = ({ cell, selected, click }) => {
   return (
     <div
-      className={["cell", cell.color, selected ? "selected" : ""].join(" ")}
-      style={{ background: cell.available && cell.figure ? "blue" : "" }}
+      className={["cell", cell.color, selected ? "cell__selected" : ""].join(
+        " "
+      )}
+      style={{
+        background: cell.available && cell.figure ? "rgb(197, 138, 71)" : "",
+      }}
       onClick={() => click(cell)}
     >
       {cell.available && !cell.figure && <div className="available" />}

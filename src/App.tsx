@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useStore } from "react-redux";
-import "./App.css";
+import "./App.scss";
 import { BoardComponent } from "./component/boardComponent";
 import { LostFigres } from "./component/lostFigures";
 import { Timer } from "./component/Timer";
